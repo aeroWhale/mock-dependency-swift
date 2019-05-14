@@ -23,7 +23,7 @@ class MockDependencyInjectionTests: XCTestCase {
     let mockedDatabase = MockDatabaseThingie()
     
     func testWithDependencyInjection() {
-        // Inject a mocked database into example class
+        // Inject a mocked database into example object.
         let example = ExampleDependencyInjection(useThisDatabaseInstead: mockedDatabase)
         example.doStuff()
         XCTAssert(mockedDatabase.getDataFunctionWasCalled, "getData function didn't excute.")
