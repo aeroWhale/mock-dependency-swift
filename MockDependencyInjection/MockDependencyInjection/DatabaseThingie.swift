@@ -9,10 +9,10 @@
 import Foundation
 
 class DatabaseThingie: Database {
-    var data = ""
+    var data: String?
     
     func getData() {
         data = "⚠️ This is the real data, becareful..."
-        print(data)
+        print(data ?? "No data")
     }
 }

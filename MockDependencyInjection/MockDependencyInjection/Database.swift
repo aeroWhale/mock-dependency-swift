@@ -9,7 +9,7 @@
 import Foundation
 
 protocol Database {
-    var data: String { get set }
+    var data: String? { get set }
     
     func getData()
 }

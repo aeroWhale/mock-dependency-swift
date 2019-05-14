@@ -9,12 +9,13 @@
 import Foundation
 
 class MockDatabaseThingie: Database {
-    var data = ""
+    var data: String?
+
     var getDataFunctionWasCalled: Bool = false
     
     func getData() {
         getDataFunctionWasCalled = true
         data = "✅ This is mocked data..."
-        print(data)
+        print(data ?? "No data")
     }
 }
